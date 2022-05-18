@@ -1,14 +1,18 @@
-import NavBar from "./Components/NavBar";
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import Home from './Components/HomePage'
+import NavBar from './Components/NavBar'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <NavBar />
-      </header>
-
+    <div className='App'>
+      <NavBar />
+      <BrowserRouter>
+        <Routes>
+          <Route index path='/' element={<Home />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
