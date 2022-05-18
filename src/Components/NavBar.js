@@ -25,12 +25,12 @@ function NavBar() {
     }
 
     return (
-        <nav className={`${offset > 100 ? 'bg-white text-purple-600 py-3 ' : 'text-white py-5'} transition-all  fixed z-[100]  w-screen p-3 shadow-md backdrop-blur-sm flex items-center justify-between px-[40px] `}>
+        <nav className={`${offset > 100 ? 'bg-white text-purple-600 py-3 ' : 'text-white py-5'} transition-all  fixed z-[100]  w-screen p-3 shadow-md backdrop-blur-sm flex items-center justify-between px-5 md:px-[40px] `}>
             <button
                 data-collapse-toggle='mobile-menu-4'
                 type='button'
                 onClick={handleHamburger}
-                className={`ml-2 inline-flex items-center p-2 text-sm text-white rounded-lg  md:hidden transition-all ease-out duration-150 hover:scale-125 `}
+                className={`ml-2 inline-flex items-center p-2 text-sm rounded-lg  md:hidden transition-all ease-out duration-150 hover:scale-125 `}
                 aria-controls='mobile-menu-4'
                 aria-expanded='false'
             >
@@ -63,11 +63,11 @@ function NavBar() {
             <div>
                 <h2 className='text-xl font-title font-bold'>Edu Ark</h2>
             </div>
-            <div id='mobile-menu-4' className='md:flex md:w-auto hidden transition-all md:flex-row flex-col  items-center justify-center'>
+            <div id='mobile-menu-4' className='text-lg md:flex md:w-auto hidden transition-all md:flex-row flex-col  items-center justify-center'>
                 <a href={'/'} className='px-4 cursor-pointer hover:opacity-70  border-gray-500/50'>Home</a>
-                <a  className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-gray-300'>Explore</a>
-                <a  className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-gray-300'>About</a>
-                <a  className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-gray-300'>Contact Us</a>
+                <a  className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-purple-300'>Explore</a>
+                <a  className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-purple-300'>About</a>
+                <a  className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-purple-300'>Contact Us</a>
             </div>
             <div className='flex items-center justify-center gap-2'>
                 <button

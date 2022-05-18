@@ -27,7 +27,7 @@ const Card = ({imgUrl}) => {
 function CourseDetails () {
   return (
     <section className='min-h-screen bg-no-repeat' style={{backgroundImage: 'url(images/registration-bg.png)'}}>
-      <h1 className='text-center text-5xl  font-bold text-purple-700'>
+      <h1 className='text-center md:text-5xl text-3xl px-5 font-bold text-purple-700'>
         Popular Courses Right Now!
       </h1>
 

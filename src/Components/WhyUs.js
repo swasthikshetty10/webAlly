@@ -13,11 +13,11 @@ const Card = ({title, icon}) => {
 
 function WhyUs() {
 	return (
-		<section className='min-h-screen my-10 md:my-0 md:mb-10'>
+		<section id="whyus" className='min-h-screen my-10 md:my-0 md:mb-10'>
 			<h1 className='text-center text-3xl md:text-5xl  font-bold text-purple-700'>
 								 Why Edu Ark?
 							</h1>
-			<div className=' flex justify-center gap-10 p-10 flex-wrap'>
+			<div className='text-body flex justify-center gap-10 p-10 flex-wrap'>
 				<Card icon={<FiKey className='transition-all duration-500 group-hover:rotate-[360deg] text-3xl mb-4 mt-2'/>} title={"Lifetime Access"}/>
 				<Card icon={<FiUsers className='transition-all duration-500 group-hover:rotate-[360deg] text-3xl mb-4 mt-2' />} title={"Expert Mentors"}/>
 				<Card icon={<FiAward className='transition-all duration-500 group-hover:rotate-[360deg] text-3xl mb-4 mt-2' />} title={"Industry Recognized Certificates"}/>

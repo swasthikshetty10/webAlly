@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily : {
-        title: "'Libre Bodoni', serif"
+        title: "'Libre Bodoni', serif",
+        body: "'Jost', sans-serif"
       } 
     },
   },
