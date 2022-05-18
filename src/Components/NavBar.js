@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { BiSearchAlt2 } from "react-icons/bi"
+import { Link } from 'react-router-dom'
 function NavBar() {
 
     const [click, setClick] = useState(0)
@@ -25,7 +26,7 @@ function NavBar() {
     }
 
     return (
-        <nav className={`${offset > 100 ? 'bg-white text-purple-600 py-3 ' : 'text-white py-5'} transition-all  fixed z-[100]  w-screen p-3 shadow-md backdrop-blur-sm flex items-center justify-between px-5 md:px-[40px] `}>
+        <nav className={`${offset > 100 ? 'bg-white text-purple-600 py-3 ' : 'text-white py-5'} transition linear duration-1000  fixed z-[100]  w-screen p-3 shadow-md backdrop-blur-sm flex items-center justify-between px-5 md:px-[40px] `}>
             <button
                 data-collapse-toggle='mobile-menu-4'
                 type='button'
@@ -65,9 +66,9 @@ function NavBar() {
             </div>
             <div id='mobile-menu-4' className='text-lg md:flex md:w-auto hidden transition-all md:flex-row flex-col  items-center justify-center'>
                 <a href={'/'} className='px-4 cursor-pointer hover:opacity-70  border-gray-500/50'>Home</a>
-                <a  className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-purple-300'>Explore</a>
-                <a  className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-purple-300'>About</a>
-                <a  className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-purple-300'>Contact Us</a>
+                <a href="#explore" className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-purple-300'>Explore</a>
+                <a href="#about" className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-purple-300'>About</a>
+                <a href="#contact" className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-purple-300'>Contact Us</a>
             </div>
             <div className='flex items-center justify-center gap-2'>
                 <button
@@ -75,7 +76,9 @@ function NavBar() {
                 >
                     <BiSearchAlt2 />
                 </button>
-                <button className={`${offset > 100 ? 'border-purple-500' : 'border-white'} rounded-lg border-2 px-3 py-1  hover:opacity-70 hover:bg-gray-200/10 transform ease-linear duration-200 font-semibold `}>Login</button>
+                <Link to="login">
+                    <button className={`${offset > 100 ? 'border-purple-500' : 'border-white'} rounded-lg border-2 px-3 py-1  hover:opacity-70 hover:bg-gray-200/10 transform ease-linear duration-200 font-semibold `}>Login</button>
+                </Link>
             </div>
 
         </nav>
