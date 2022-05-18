@@ -61,7 +61,7 @@ function NavBar() {
                 </svg>
             </button>
             <div>
-                <h2 className='text-xl font-title font-bold'>Edu Ark</h2>
+                <h2 className={`${offset > 100 ? 'text-xl' : 'text-2xl '} transition-all font-title font-bold`}>Edu Ark</h2>
             </div>
             <div id='mobile-menu-4' className='text-lg md:flex md:w-auto hidden transition-all md:flex-row flex-col  items-center justify-center'>
                 <a href={'/'} className='px-4 cursor-pointer hover:opacity-70  border-gray-500/50'>Home</a>

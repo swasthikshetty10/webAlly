@@ -1,5 +1,5 @@
 import React from 'react'
-import { Fade, Slide } from 'react-awesome-reveal'
+import { Fade } from 'react-awesome-reveal'
 import curvesvg from '../../Svg/CurveSvg'
 import Contact from '../Contact'
 import CourseDetails from '../CourseDetails'
@@ -15,7 +15,7 @@ function index() {
                     <div className="flex text-center md:text-start order-2 md:order-1 flex-col gap-5 cursor-pointer transition duration-500 ease-in-out ">
                         <div className="text-5xl md:text-6xl xl:text-7xl mb-4  flex flex-col">
                             <span className="font-bold font-title mb-2 focus:none text-white">Edu Ark</span>
-                            <p className="font-normal text-lg text-white">Learning to Love, Loving to Learn!</p>
+                            <p className="font-normal text-lg text-white max-w-lg">Your one-stop destination to learn anything and everything! Become a professional web-developer, or create an app that'll be used by millions, today!</p>
                         </div>
                         <div>
                             <a href='#whyus' className="bg-white  font-bold py-2 px-4 rounded-full hover:bg-gray-100 ">Start Exploring</a>
