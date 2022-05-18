@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
 import { Zoom } from 'react-awesome-reveal'
+import { Link } from 'react-router-dom'
 
 const imgUrls = [
   'https://cdn.hashnode.com/res/hashnode/image/upload/v1622008722227/ResNcwZyph.png',
@@ -21,9 +22,11 @@ const Card = ({ imgUrl }) => {
           building user interfaces based on UI components. It is maintained by
           Meta and a community of individual developers and companies.
         </p>
-        <button className='  text-xl text-white px-3 py-1 hover:bg-white bg-purple-600 bg-opacity-50 hover:text-purple-700 transform ease-linear duration-200 font-semibold border-white '>
+
+        <a href="/enroll" className='  text-xl text-white px-3 py-1 hover:bg-white bg-purple-600 bg-opacity-50 hover:text-purple-700 transform ease-linear duration-200 font-semibold border-white '>
           Enroll Now
-        </button>
+        </a>
+
       </div>
     </Zoom>
   )
