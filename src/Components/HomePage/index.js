@@ -19,8 +19,6 @@ function index() {
                     <div className="w-fit hover:translate-x-10   transition duration-500 ease-in-out hover:scale-105">
                         <img className='h-full  lg:h-96 ' src='/images/header-img.png' />
                     </div>
-                    <div>
-                    </div>
                 </div>
                 {curvesvg(false)}
             </div>
