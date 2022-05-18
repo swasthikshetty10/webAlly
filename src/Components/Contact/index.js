@@ -49,9 +49,9 @@ function Contact() {
                             <div className="mt-8">
                                 <button
                                     className="uppercase text-sm font-bold tracking-wide text-white from-purple-400 to-purple-500 bg-gradient-to-r bg-opacity-80 flex p-3 rounded-lg w-full hover:bg-opacity-50 focus:outline-none focus:shadow-outline items-center justify-center gap-3"
-                                    type="submit" 
+                                    type="submit"
                                 >
-                                     Send Message
+                                    Send Message
                                 </button>
                             </div>
                             <br />

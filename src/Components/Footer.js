@@ -1,7 +1,10 @@
 import React from 'react'
+import { Fade, Slide } from 'react-awesome-reveal'
 
 function Footer() {
 	return (
+
+
 		<footer className='md:p-20 p-5 flex flex-col md:flex-row just justify-between pt-20 bg-[#0e0824]'>
 			<div className=' items-center  md:gap-20 justify-between flex text-gray-200'>
 				<div className='flex flex-col '>
@@ -28,6 +31,7 @@ function Footer() {
 				<p className='text-gray-200'>© All Rights Reserved</p>
 			</div>
 		</footer>
+
 	)
 }
 
