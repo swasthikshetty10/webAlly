@@ -1,7 +1,9 @@
 import React from 'react'
+import { Fade, Slide } from 'react-awesome-reveal'
 import curvesvg from '../../Svg/CurveSvg'
 import Contact from '../Contact'
 import CourseDetails from '../CourseDetails'
+import Footer from '../Footer'
 import WhyUs from '../WhyUs'
 
 function index() {
@@ -16,7 +18,7 @@ function index() {
                             <p className="font-normal text-lg text-white">Learning to Love, Loving to Learn!</p>
                         </div>
                         <div>
-                            <a className="bg-white  font-bold py-2 px-4 rounded-full hover:bg-gray-100 ">Start Exploring</a>
+                            <a href='#whyus' className="bg-white  font-bold py-2 px-4 rounded-full hover:bg-gray-100 ">Start Exploring</a>
                         </div>
                     </div>
                     <div className="w-fit order-1 md:order-2  transition duration-500 ease-in-out ">
@@ -26,9 +28,12 @@ function index() {
                 {curvesvg(false)}
             </div>
         </section>
-        <WhyUs />
+        <Fade delay={100} duration={500}>
+            <WhyUs />
+        </Fade>
         <CourseDetails />
         <Contact />
+        <Footer />
     </>
     )
 }
