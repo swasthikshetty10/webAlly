@@ -61,13 +61,13 @@ function NavBar() {
                 </svg>
             </button>
             <div>
-                <h2 className='text-xl font-bold'>Edu Ark</h2>
+                <h2 className='text-xl font-title font-bold'>Edu Ark</h2>
             </div>
             <div id='mobile-menu-4' className='md:flex md:w-auto hidden transition-all md:flex-row flex-col  items-center justify-center'>
-                <a className='px-4 cursor-pointer hover:opacity-70  border-gray-500/50'>Home</a>
-                <a className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-gray-300'>Explore</a>
-                <a className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-gray-300'>About</a>
-                <a className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-gray-300'>Contact Us</a>
+                <a href={'/'} className='px-4 cursor-pointer hover:opacity-70  border-gray-500/50'>Home</a>
+                <a  className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-gray-300'>Explore</a>
+                <a  className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-gray-300'>About</a>
+                <a  className='px-4 cursor-pointer hover:opacity-70 md:border-l-[1px] border-gray-300'>Contact Us</a>
             </div>
             <div className='flex items-center justify-center gap-2'>
                 <button

@@ -13,13 +13,18 @@ const Card = ({title, icon}) => {
 
 function WhyUs() {
 	return (
-		<div className='min-h-[90vh] flex justify-center gap-10 p-10 flex-wrap'>
-			<Card icon={<FiKey className='transition-all duration-500 group-hover:rotate-[360deg] text-3xl mb-4 mt-2'/>} title={"Lifetime Access"}/>
-			<Card icon={<FiUsers className='transition-all duration-500 group-hover:rotate-[360deg] text-3xl mb-4 mt-2' />} title={"Expert Mentors"}/>
-			<Card icon={<FiAward className='transition-all duration-500 group-hover:rotate-[360deg] text-3xl mb-4 mt-2' />} title={"Industry Recognized Certificates"}/>
-			<Card icon={<FiHeadphones className='transition-all duration-500 group-hover:rotate-[360deg] text-3xl mb-4 mt-2'/>} title={"24/7 Support"}/>
-			<Card icon={<FiBookOpen className='transition-all duration-500 group-hover:rotate-[360deg] text-3xl mb-4 mt-2'/>} title={"2000+ Courses"}/>
-		</div>
+		<section className='min-h-screen my-10 md:my-0 md:mb-10'>
+			<h1 className='text-center text-3xl md:text-5xl  font-bold text-purple-700'>
+								 Why Edu Ark?
+							</h1>
+			<div className=' flex justify-center gap-10 p-10 flex-wrap'>
+				<Card icon={<FiKey className='transition-all duration-500 group-hover:rotate-[360deg] text-3xl mb-4 mt-2'/>} title={"Lifetime Access"}/>
+				<Card icon={<FiUsers className='transition-all duration-500 group-hover:rotate-[360deg] text-3xl mb-4 mt-2' />} title={"Expert Mentors"}/>
+				<Card icon={<FiAward className='transition-all duration-500 group-hover:rotate-[360deg] text-3xl mb-4 mt-2' />} title={"Industry Recognized Certificates"}/>
+				<Card icon={<FiHeadphones className='transition-all duration-500 group-hover:rotate-[360deg] text-3xl mb-4 mt-2'/>} title={"24/7 Support"}/>
+				<Card icon={<FiBookOpen className='transition-all duration-500 group-hover:rotate-[360deg] text-3xl mb-4 mt-2'/>} title={"2000+ Courses"}/>
+			</div>
+		</section>
 	)
 }
 
