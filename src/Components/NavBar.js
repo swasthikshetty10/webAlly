@@ -25,7 +25,7 @@ function NavBar() {
       }
 
     return (
-        <nav className={`${offset > 100  ? 'bg-white text-purple-500 py-3' : 'bg-purple-600 py-5'} transition-all  fixed z-[100] text-white w-screen p-3 shadow-md flex items-center justify-between px-[40px] text-black`}>
+        <nav className={`${offset > 100  ? 'bg-white text-purple-500 py-3' : 'py-5'} transition-all  fixed z-[100] text-white w-screen p-3 shadow-md backdrop-blur-sm flex items-center justify-between px-[40px] text-black`}>
              <button
               data-collapse-toggle='mobile-menu-4'
               type='button'
